@@ -1,0 +1,27 @@
+﻿{
+  "name": "2 links",
+  "version": "0.0",
+  "description": "2 links the the exstion",
+  "permissions": [
+    "tabs","http://*/*","https://*/*"
+  ],
+  "background": {
+	 "page": "background-page/backgroundPage.htm"
+    
+  },
+  "content_scripts": [
+    {
+	   "matches": ["http://*/*","https://*/*"],
+      "js": ["Jquery1.6+vsdoc/jquery-1.7.1.min.js","content_script.js"]
+    }
+  ],
+ 
+	 "permissions": [
+    "tabs", "http://www.google.com/*"
+  ],
+  "browser_action": {
+    
+    "default_popup": "popup-page/popup_page.htm"      
+  },
+  "manifest_version": 2
+}

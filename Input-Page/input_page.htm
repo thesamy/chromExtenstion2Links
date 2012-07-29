@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Jquery1.6+vsdoc/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="../InputObject.js" type="text/javascript"></script>
+    
+    <script src="input_page.js" type="text/javascript"></script>
+    <style>
+        body 
+        {
+            padding-top:20px;
+            width:600px;
+            margin: 0 auto;
+            
+        }
+        #contact
+        {
+            float:right;
+        }
+        #timerBox
+        {
+            
+        }
+        .allTextBoxes
+        {
+              direction:rtl;
+        }
+    </style>
+</head>
+    <body>
+     
+       
+        <div id="timerBox">
+        <select id="mintusToRun" name="minutsToRun">
+         <option value="notSelected">זמן ריצה לכל הודעה</option>
+         <option value="100">0:שניות</option>
+         <option value="5000">5:שניות</option>
+        <option value="10000">10:שניות</option>
+        <option value="20000">20:שניות</option>
+        <option value="30000">30:שניות</option>
+        <option value="60000">1:דקות</option>
+        <option value="120000">2:דקות</option>
+        <option value="180000">3:דקות</option>
+        <option value="240000">4:דקות</option>
+        <option value="300000">5:דקות</option>
+          
+        </select>
+        </div>
+
+        <div id="contact">
+        <input  type="text" id="name" class="allTextBoxes"/>
+        :שם
+        <br/>
+        <input type="password" id="password" class="allTextBoxes"/>
+        :סיסמא
+        <br />
+       <br />
+        <input type="text" id="subject" class="allTextBoxes"/>
+        :נושא
+        <br/>
+
+       
+        <br />
+           הודעה:
+           <br />
+        <textarea id="msg" cols="40" rows="10" class="allTextBoxes"></textarea>
+      
+        <br />
+        <br />
+
+        <input type="text" id="linkName1" value="" class="allTextBoxes"/>
+        <label>:ביטוי</label> 
+        <br />
+        <input type="text" id="linkURL1"/>
+        <label>:קישור</label> 
+        <br />
+        <br />
+          <input type="text" id="linkName2" class="allTextBoxes" />
+        <label>:ביטוי</label> 
+        <br />
+        <input type="text" id="linkURL2" />
+        <label>:קישור</label> 
+        <br />
+        
+        <br />
+        
+        <!-- <input type="button" id="button" name="buttonTest" value="לחץ כאן לשמור את המידע"/> -->
+        <br />
+        <input type="button" id="updateButton" value="שלח את ההודעה" />
+        <label id="status"></label>
+
+        </div>
+    </body>
+</html>
